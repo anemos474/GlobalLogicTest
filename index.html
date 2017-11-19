@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>GlobalLogicTest</title>
+	<link rel='stylesheet' type='text/css' href='css/styles.css' />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js'></script>
+</head>
+<body>
+    <div class='container' id='content'></div>
+
+    <script type='text/babel'>
+	
+		var ContainerFooter = React.createClass({
+			render: function() {
+				return (
+					<div className='container__footer'>
+						<div className='footer__contacts'>
+							<div className='footer__contact'>
+								<p className='footer__text'><b>Mobile:</b> +38066-66-66-666</p>
+								<p className='footer__text'><b>Email:</b> mail@gmail.com</p>
+								<p className='footer__text'><b>Skype:</b> mySkypeAcc</p>
+							</div>
+							<div className='logo logo_footer'>
+								<img className='image__footer' src='images/logofooter.png'/>
+							</div>
+						</div>
+					</div>
+				);
+			}
+		});		
+				
+		var ContainerForms = React.createClass({		
+			render: function() {
+				return (
+					<div className='container__forms' id='forms'>
+						<h3 className='about__title'>CONTACT</h3>
+						<form className='main__forms' action='?' method='POST' >
+							<div className='forms__line'>
+								<div className='forms__labels'>
+									<label className='labels__name'>Phone number:</label>
+									<label className='labels__sub-name'>+38066-66-66-666</label>
+								</div>
+								<div className='forms__input'>	
+									<input type='text' placeholder='Names' className='forms__names' />
+								</div>	
+							</div>
+							<div className='forms__line'>
+								<div className='forms__labels'>
+									<label className='labels__name'>Email:</label>
+									<label className='labels__sub-name'>mail@gmail.com</label>
+								</div>
+								<div className='forms__input'>	
+									<input type='text' placeholder='Email' className='forms__mail' />
+								</div>	
+							</div>
+							<div className='forms__line'>
+								<div className='forms__labels'>
+									<label className='labels__name'>Skype:</label>
+									<label className='labels__sub-name'>mySkypeAcc</label>
+								</div>
+								<div className='forms__input'>									
+									<textarea type='text' placeholder='Send a mesage' className='forms__skype' />
+								</div>	
+							</div>
+							<div className='forms__button'>
+								<input type='button' value='SEND' className='send__button' />
+							</div>		
+						</form>	
+					</div>
+				);
+			}
+		});		
+	
+		var ContainerSkills = React.createClass({
+			render: function() {
+				return (
+					<div className='container__skills'>
+						<div className='skills__line'>
+							<div className='skills__title'>
+								{this.props.skillsTitle}
+							</div>
+							<div className='skills__level'>
+								<img className='level__image' src={this.props.pimg} />
+							</div>
+						</div>
+					</div>
+				);
+			}
+		});
+	
+		var ContainerAbout = React.createClass({
+			render: function() {
+				return (
+					<div className='container__about'>
+						<h3 className='about__title'>ABOUT</h3>
+						<div className='about__content left'>
+							<h5 className='content__title'><i>Goals</i></h5>
+							<p className='content__text'>Lorem ipsum dolor sit amet, ac erat 
+							<br />dolor quisque magna consectetur leo, 
+							<br />pede nec phasellus praesent adipiscing. 
+							<br />Nullam diam magna at mauris amet, non 
+							<br />ut urna a commodo. Donec vivamus 
+							<br />semper nisi velit, proin id turpis, vehicu-
+							<br />la amet nullam convallis adipiscing ut 
+							<br />sit, sit viverra. Duis interdum eu eu 
+							<br />sodales nec ut, non nibh accumsan eleif-
+							<br />end. Purus ut vitae sapien dui duis do-
+							<br />lores, porttitor tempus nascetur id ut, 
+							<br />integer ut dignissim harum
+							</p>
+						</div>
+						<img className='about__avatar' src='images/avatar.png' />
+						<div className='about__content right'>
+							<h5 className='content__title'><i>Dreams</i></h5>
+							<p className='content__text'>Lorem ipsum dolor sit amet, ac erat 
+							<br />dolor quisque magna consectetur leo, 
+							<br />pede nec phasellus praesent adipiscing. 
+							<br />Nullam diam magna at mauris amet, non 
+							<br />ut urna a commodo. Donec vivamus 
+							<br />semper nisi velit, proin id turpis, vehicu-
+							<br />la amet nullam convallis adipiscing ut 
+							<br />sit, sit viverra. Duis interdum eu eu so-
+							<br />dales nec ut, non nibh accumsan eleif-
+							<br />end. Purus ut vitae sapien dui duis do-
+							<br />lores, porttitor tempus nascetur id ut, 
+							<br />integer ut dignissim harum.							
+							</p>
+						</div>						
+					</div>
+				);
+			}
+		});
+	
+
+        var ContainerHeader = React.createClass({
+            render: function() {
+                return (
+					<div className='wrapper'>
+						<div className='container__header'>
+							<div className='header__menu'>
+								<ul className='menu'>
+									<li className='menu__items'><a className='menu__item' href='#'>Home</a></li>
+									<li className='menu__items'><a className='menu__item' href='#'>Abaut</a></li>
+									<li className='menu__items'><a className='menu__item' href='#'>Skills</a></li>
+									<li className='menu__items'><a className='menu__item' href='#'>Contacts</a></li>
+								</ul>
+							</div>
+							<div className='header__logo'>
+								<div className='logo'>
+									<img className='logo__image' src='images/logo.png'/>
+								</div>
+							</div>
+							<div className='header__title'>
+								<h1 className='title__name'>NAME SURNAME</h1>
+								<p className='sub-title__name'><i>FRONT-END DEVELOPER</i></p>
+							</div>
+						</div>
+						<ContainerAbout />
+						<div className='content__skills'>
+						<h3 className='about__title'>SKILLS</h3>
+							<div className='scills__props'>
+							<ContainerSkills skillsTitle='HTML5' pimg='images/html.png' />
+							<ContainerSkills skillsTitle='CSS' pimg='images/css.png' />
+							<ContainerSkills skillsTitle='JavaScript' pimg='images/js.png' />
+							<ContainerSkills skillsTitle='ReactJS' pimg='images/react.png' />
+							<ContainerSkills skillsTitle='AngularJS' pimg='images/angular.png' />
+							</div>
+						</div>
+						<ContainerForms />
+						<ContainerFooter />
+					</div>	
+                );
+            }
+        });
+		
+		
+        ReactDOM.render(
+            <ContainerHeader />,
+            document.getElementById('content')
+        );
+		
+    </script>
+</body>
+</html>
