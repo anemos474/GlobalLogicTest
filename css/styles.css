@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.container{
+	width: 100%;
+    max-width: 1280px;
+	font-size: 0;
+	margin: 0 auto;
+}
+.wrapper{}
+.container__header{
+	background: url(../images/bg.png);
+    height: 650px;
+}
+.header__menu{
+	position: relative;
+}
+.menu{
+	position: absolute;
+    right: 25px;
+}
+.menu__items{
+	display: inline-block;
+    padding: 25px 25px 0 25px;
+}
+
+.menu__items:hover{
+	border-bottom: 2px solid #ffffff;
+}
+
+.menu__item{
+	font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}	
+
+.header__logo{}
+.logo{}
+.logo__image{
+	padding: 20px 0 0 125px;
+}
+.header__title{}
+.title__name{
+	font-size: 60px;
+	color: #fefefe;
+	text-align: center;
+	padding-top: 235px;
+	margin: 0;
+}
+.sub-title__name{
+	font-size: 26px;
+	color: #fefefe;
+	text-align: center;
+	margin: 0;
+}
+.container__about{
+    position: relative;
+    padding: 75px 0 80px 0;
+    height: 400px;
+    border-bottom: 1px solid #d5d5cd;
+}
+.about__title{
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
+    padding: 0px 0 25px 0;
+}
+.about__content{
+    position: absolute;
+}
+.left{
+    left: 225px;
+    text-align: right;
+}
+.right{
+    right: 225px;
+}
+.content__title{
+    font-size: 24px;
+    margin: 0;
+}
+.content__text{
+    font-size: 16px;
+}
+.about__avatar{position: absolute;left: 553px;top: 200px;}
+.content__skills{
+    height: 400px;
+    position: relative;
+    border-bottom: 1px solid #d5d5cd;
+    padding: 50px 0 0 0;
+}
+.container__skills{
+    padding: 5px;
+}
+.skills__line{}
+.skills__title{
+    font-size: 32px;
+    font-weight: bold;
+    display: inline-block;
+}
+.scills__props{
+    position: absolute;
+    text-align: right;
+    left: 440px;
+}
+.title-skill__name{}
+.skills__level{
+    display: inline-block;
+    padding: 0 0 0 85px;
+}
+.level__image{}
+.container__forms{
+    height: 400px;
+    padding: 40px 0 90px 0;
+    position: relative;
+}
+.main__forms{padding: 0 0 0 300px;}
+.forms__line{}
+.forms__labels{display: inline-block;width: 150px;padding: 15px 65px 15px 0;}
+.labels__name{
+    font-size: 15px;
+}
+.forms__input{
+    display: inline-block;
+    padding: 35px 0 0 50px;
+    position: absolute;
+    text-align: left;
+}
+.labels__sub-name{
+    font-size: 15px;
+    display: block;
+    color: #888888;
+}
+.forms__names{
+    height: 40px;
+    width: 440px;
+}
+.forms__mail{
+	height: 40px;
+    width: 440px;
+}
+.forms__skype{
+    height: 90px;
+	width: 440px;
+}
+.forms__button{
+    position: absolute;
+    bottom: 90px;
+    right: 420px;
+}
+.send__button{
+    height: 30px;
+    width: 165px;
+    background: #565655;
+    border: none;
+    color: #ffffff;
+	cursor: pointer;
+}
+.container__footer{
+    height: 175px;
+    background: #565655;
+    position: relative;
+}
+.footer__contacts{}
+.footer__contact{
+    color: #fffefe;
+    font-size: 15px;
+    padding: 45px 0 0 200px;
+}
+.logo_footer{
+    position: absolute;
+    right: 200px;
+    top: 50px;
+}
+.footer__text{
+    padding: 5px;
+    margin: 0;
+}
+.image_footer{}
