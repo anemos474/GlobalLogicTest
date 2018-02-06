@@ -86,7 +86,10 @@ body {
 .content__text{
     font-size: 16px;
 }
-.about__avatar{position: absolute;left: 553px;top: 200px;}
+.about__avatar{
+    position: absolute;
+    left: 553px;top: 200px;
+}
 .content__skills{
     height: 400px;
     position: relative;
